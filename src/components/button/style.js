@@ -1,7 +1,7 @@
 import styled from 'styled-components';  
 import { colors } from "../../utilities";
                                          
-const StyledButton = styled.button`      
+export const StyledButton = styled.button`      
   color: ${colors.primary500};           
   font-size: 1em;                        
   margin: 1em;                           
@@ -9,6 +9,14 @@ const StyledButton = styled.button`
   border: 2px solid ${colors.primary500};
   border-radius: 2rem;                   
   background: transparent;               
+`;                              
+                                         
+export const StyledButtonSuccess = styled(StyledButton)`
+  color: ${colors.success500};           
+  border: 2px solid ${colors.success500};
 `;                                       
                                          
-export default StyledButton;             
+export const StyledButtonDanger = styled(StyledButton)`
+  color: ${colors.danger500};            
+  border: 2px solid ${colors.danger500}; 
+`;                                       
