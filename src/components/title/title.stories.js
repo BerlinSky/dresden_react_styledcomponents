@@ -1,0 +1,13 @@
+import React from "react";
+import Title from "./title";
+                      
+export default {      
+  title: "Title",     
+  component: Title,   
+};                    
+                      
+export const Default = () => <Title />;
+                      
+Default.story = {     
+  name: "default",    
+};                    
